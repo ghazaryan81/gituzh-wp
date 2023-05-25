@@ -11,7 +11,6 @@
  * @since Gituzh 0.0.1
  */
 ?>
-
 <!DOCTYPE html>
 <html lang="hy">
 	<!-- prettier-ignore -->
@@ -21,8 +20,7 @@
 	<title>Գիտուժ նախաձեռնություն</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=5,minimum-scale=1,user-scalable=yes,shrink-to-fit=no"/>
- 
-	<meta name="description" content="Գիտուժ նախաձեռնություն"/>
+ 	<meta name="description" content="Գիտուժ նախաձեռնություն"/>
 	<meta name="keywords" content="Գիտուժ"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:url" content=""/>
@@ -100,7 +98,7 @@
 	<link rel="icon" href="<?=$GLOBALS['TEMPLATE_PATH']; ?>/assets/ui/img/fav/favicon-196x196.png" sizes="196x196"/>
 	<link crossorigin="use-credentials" rel="manifest" href="<?=$GLOBALS['TEMPLATE_PATH']; ?>/assets/ui/manifest.json"/>
  <?php wp_head(); ?>
- <link href="img/fav/favicon.ico" rel="alternate icon"/>
+ <link href="<?=$GLOBALS['TEMPLATE_PATH']; ?>/assets/ui/img/fav/favicon.ico" rel="alternate icon"/>
  <link rel="mask-icon" href="<?=$GLOBALS['TEMPLATE_PATH']; ?>/assets/ui/img/fav/favicon-without-bg.svg" color="#ffffff"/>
  <link href="<?=$GLOBALS['TEMPLATE_PATH']; ?>/assets/ui/img/fav/favicon-with-bg.svg" rel="icon" type="image/svg+xml"/>
  <link href="<?=$GLOBALS['TEMPLATE_PATH']; ?>/assets/ui/css/reset.css" rel="stylesheet" />
@@ -150,30 +148,29 @@
 								</g>
 							</svg>
 						</div>
-<?php
-/*
-?>
 
-						<nav class="menu">
-							<ul class="menu__ul">
-								<li class="menu__li menu__li--current">
-									<a href="#">ՄԵՐ ՄԱՍԻՆ</a>
-								</li>
-								<li class="menu__li">
-									<a href="#">ՀԱՄԱՅՆՔ</a>
-								</li>
-								<li class="menu__li">
-									<a href="#">ԱՋԱԿԻՑՆԵՐ</a>
-								</li>
-								<li class="menu__li">
-									<a href="#">FAQ</a>
-								</li>
-							</ul>
-						</nav>
-<?php
-*/
-?>
-
+      <?php
+      /*
+      ?>
+       <nav class="menu">
+        <ul class="menu__ul">
+         <li class="menu__li menu__li--current">
+          <a href="#">ՄԵՐ ՄԱՍԻՆ</a>
+         </li>
+         <li class="menu__li">
+          <a href="#">ՀԱՄԱՅՆՔ</a>
+         </li>
+         <li class="menu__li">
+          <a href="#">ԱՋԱԿԻՑՆԵՐ</a>
+         </li>
+         <li class="menu__li">
+          <a href="#">FAQ</a>
+         </li>
+        </ul>
+       </nav>
+      <?php
+      */
+      ?>
 
       <?php
       $current_lang = pll_current_language();
@@ -200,7 +197,6 @@
        );
       ?>
 
-
 						<div class="group group--btn-langs">
 							<a href="#" class="btn btn--support">
 								<span class="txt-label">ԱՋԱԿՑԵԼ</span>
@@ -224,7 +220,6 @@
         ?>
        </span>
        <!-- /langs -->
-
 
 						</div>
 					</div>
