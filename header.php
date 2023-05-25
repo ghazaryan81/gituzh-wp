@@ -111,7 +111,7 @@
 			<header class="header">
 				<div class="section-fix">
 					<div class="header__content">
-						<a href="#" class="logo js-hta" title="Գիտուժ նախաձեռնություն">
+						<a href="<?=pll_home_url() ?>" class="logo js-hta" title="Գիտուժ նախաձեռնություն">
 							<img
 								alt="Գիտուժ նախաձեռնություն"
 								title="Գիտուժ նախաձեռնություն"

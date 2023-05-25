@@ -18,6 +18,7 @@
 
  function define_global_vars() {
   global $TEMPLATE_PATH;
+  global $HOME_PAGE;
   $TEMPLATE_PATH = parse_url(get_template_directory_uri(), PHP_URL_PATH);
  }
  add_action('after_setup_theme', 'define_global_vars');

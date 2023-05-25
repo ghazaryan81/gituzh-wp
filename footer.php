@@ -24,8 +24,12 @@
 						</div>
 
 						<!-- prettier-ignore -->
+      <?php
+      /*
 						<ul class="entity-links">
-       <li class="entity-links__li entity-links__li--current"><a href="#">Մեր մասին</a></li>
+       <li class="entity-links__li entity-links__li--current">
+        <a href="#">Մեր մասին</a>
+       </li>
        <li class="entity-links__li"><a href="#">Համայնք</a></li>
        <li class="entity-links__li"><a href="#">Աջակիցներ</a></li>
        <li class="entity-links__li"><a href="#">Լուրեր</a></li>
@@ -33,6 +37,33 @@
        <li class="entity-links__li"><a href="#">Պահանջ</a></li>
        <li class="entity-links__li"><a href="#">Աջակցել</a></li>
       </ul>
+      */
+      ?>
+
+      <?php
+      $current_lang = pll_current_language();
+      wp_nav_menu(
+       array(
+        'menu'              => 'footer-menu-'.$current_lang,
+        'menu_class'        => 'entity-links',
+        'menu_id'           => '',
+        'container'         => '',
+        'container_class'   => 'menu',
+        'container_id'      => '',
+        'fallback_cb'       => 'wp_page_menu',
+        'before'            => '',
+        'after'             => '',
+        'link_before'       => '',
+        'link_after'        => '',
+        'echo'              => true,
+        'depth'             => 0,
+        'walker'            => '',
+        'theme_location'    => '',
+        'items_wrap'        => '<ul class="%2$s">%3$s</ul>',
+        'item_spacing'      => 'preserve',
+        )
+       );
+      ?>
 
 						<div class="soc-info">
 							<div class="soc-info__row">Հետևի՛ր մեզ սոցիալական ցանցերում:</div>
