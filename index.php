@@ -15,4 +15,13 @@
  */
 ?>
 <?php get_header(); ?>
+<main class="main">
+ <section class="page dn">
+  <div class="section-fix">
+   <div class="page__content">
+    <h2 class="h1 h1--page"></h2>
+   </div>
+  </div>
+ </section>
+</main>
 <?php get_footer(); ?>
